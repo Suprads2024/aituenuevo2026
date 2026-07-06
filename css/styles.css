@@ -630,3 +630,145 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 
 
 
+
+
+/* =========================================================
+   CORPORATIVOS · Hero
+   ========================================================= */
+.hero-corp{min-height:auto;padding:170px 32px 96px;}
+.hero-corp .hero-bg{background:url('../assets/img/aitue_corporativo_header-2.webp') center/cover;opacity:.5;}
+.hero-corp .wrap{display:block;max-width:960px;}
+.hero-corp h1{font-size:52px;line-height:1.06;letter-spacing:-1.2px;max-width:920px;}
+.hero-corp .desc{max-width:760px;font-size:17.5px;color:#cbdaee;margin:0 0 18px;}
+.hero-corp .desc.sub{color:#9fb9db;font-size:16px;margin:0 0 34px;}
+
+/* =========================================================
+   CORPORATIVOS · Slider de módulos (1 módulo por vista · 5 en total)
+   ========================================================= */
+.modules{background:var(--paper);}
+.mod-slider{position:relative;}
+.mod-viewport{overflow:hidden;cursor:grab;border-radius:20px;}
+.mod-viewport:active{cursor:grabbing;}
+.mod-track{display:flex;gap:0;will-change:transform;transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+.mod-card{flex:0 0 100%;width:100%;max-width:100%;min-width:0;background:#fff;border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;
+  display:grid;grid-template-columns:1.05fr 1fr;}
+.mod-card .mc-left{min-width:0;padding:44px 44px;display:flex;flex-direction:column;}
+.mod-card .mc-count{font-family:'Sansation',sans-serif;font-weight:800;font-size:13px;letter-spacing:2px;
+  color:var(--blue);margin-bottom:22px;}
+.mod-card .mc-count b{color:var(--navy-500);}
+.mod-card .ic{width:64px;height:64px;border-radius:16px;background:var(--blue-soft);color:var(--blue);
+  display:flex;align-items:center;justify-content:center;margin-bottom:22px;flex:none;}
+.mod-card .ic svg{width:34px;height:34px;}
+.mod-card h3{font-family:'Sansation',sans-serif;font-weight:800;color:var(--navy-500);font-size:27px;
+  line-height:1.12;letter-spacing:-.4px;margin:0 0 16px;}
+.mod-card .mc-left p{color:var(--ink-soft);font-size:15.5px;line-height:1.65;margin:0 0 12px;}
+.mod-card .mc-panel{min-width:0;background:var(--navy-700);position:relative;overflow:hidden;
+  padding:44px 42px;display:flex;flex-direction:column;justify-content:center;}
+.mod-card .mc-panel::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 100% 0%,rgba(47,127,224,.28),transparent 60%);}
+.mod-card .list-label{position:relative;color:var(--blue-light);font-weight:700;font-size:13px;
+  letter-spacing:1px;text-transform:uppercase;margin:0 0 20px;}
+.mod-card ul{position:relative;display:flex;flex-direction:column;gap:14px;margin:0;}
+.mod-card li{position:relative;padding-left:30px;color:#dbe6f5;font-size:15px;line-height:1.5;}
+.mod-card li::before{content:"";position:absolute;left:0;top:2px;width:18px;height:18px;border-radius:50%;
+  background:rgba(47,127,224,.2);box-shadow:inset 0 0 0 1.5px var(--blue-light);}
+.mod-card li::after{content:"";position:absolute;left:5.5px;top:6.5px;width:6px;height:3.5px;
+  border-left:1.8px solid var(--blue-light);border-bottom:1.8px solid var(--blue-light);transform:rotate(-45deg);}
+
+.mod-nav{display:flex;justify-content:space-between;align-items:center;margin-top:28px;gap:20px;}
+.mod-dots{display:flex;gap:9px;flex-wrap:wrap;}
+.mod-dots button{width:9px;height:9px;border-radius:50%;border:none;padding:0;cursor:pointer;
+  background:#c7d5e8;transition:width .25s,background .25s;}
+.mod-dots button.on{width:26px;border-radius:6px;background:var(--blue);}
+.mod-arrows{display:flex;gap:12px;}
+.mod-arrows button{width:50px;height:50px;border-radius:12px;border:1px solid var(--line);
+  background:#fff;color:var(--navy-500);cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:background .2s,color .2s,border-color .2s,transform .2s;}
+.mod-arrows button:hover{background:var(--blue);color:#fff;border-color:var(--blue);transform:translateY(-2px);}
+.mod-arrows button:disabled{opacity:.4;cursor:default;transform:none;background:#fff;color:var(--navy-500);
+  border-color:var(--line);}
+.mod-arrows svg{width:20px;height:20px;}
+
+/* =========================================================
+   CORPORATIVOS · Soluciones globales · intro con estilo
+   ========================================================= */
+.gintro{display:grid;grid-template-columns:1fr 1fr;gap:26px 56px;align-items:start;margin-bottom:20px;}
+.gintro .lead{font-family:'Sansation',sans-serif;font-weight:700;color:var(--navy-500);
+  font-size:24px;line-height:1.3;letter-spacing:-.4px;margin:0;}
+.gintro .lead .accent{color:var(--blue);}
+.gintro .cols{display:flex;flex-direction:column;gap:14px;}
+.gintro .cols p{color:var(--ink-soft);font-size:16px;line-height:1.7;margin:0;}
+.gcallout{display:flex;align-items:center;gap:20px;background:var(--navy-700);border-radius:16px;
+  padding:26px 32px;margin-top:8px;}
+.gcallout .gc-ic{flex:none;width:52px;height:52px;border-radius:13px;background:rgba(47,127,224,.18);
+  color:var(--blue-light);display:flex;align-items:center;justify-content:center;}
+.gcallout .gc-ic svg{width:26px;height:26px;}
+.gcallout p{color:#dbe6f5;font-size:16px;line-height:1.6;margin:0;}
+.gcallout p b{color:#fff;}
+
+/* =========================================================
+   CORPORATIVOS · Implementación (3 modelos)
+   ========================================================= */
+.impl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;}
+.impl-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 30px;
+  transition:transform .3s,box-shadow .3s,border-color .3s;}
+.impl-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(12,34,64,.1);border-color:#cfe0f5;}
+.impl-card .num{font-family:'Sansation',sans-serif;font-weight:800;font-size:14px;letter-spacing:1.5px;
+  color:var(--blue);margin-bottom:16px;}
+.impl-card h3{font-family:'Sansation',sans-serif;font-weight:800;color:var(--navy-500);font-size:21px;
+  line-height:1.2;margin:0 0 14px;}
+.impl-card p{color:var(--ink-mute);font-size:15px;line-height:1.65;margin:0 0 12px;}
+.impl-card p:last-child{margin-bottom:0;}
+
+/* =========================================================
+   CORPORATIVOS · Soporte (split navy) y Satelital a medida (split claro)
+   ========================================================= */
+.soporte{position:relative;background:var(--navy-700);overflow:hidden;}
+.soporte .bg{position:absolute;inset:0;background:url('../assets/img/soporte.jpg') center/cover;opacity:.5;}
+.soporte .tint{position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,26,48,.94),rgba(8,26,48,.78));}
+.soporte .wrap{position:relative;z-index:2;display:flex;gap:56px;align-items:center;}
+.soporte .body{flex:1.2;min-width:0;}
+.soporte .body h2{color:#fff;font-weight:800;font-size:40px;line-height:1.1;letter-spacing:-1px;margin:14px 0 20px;}
+.soporte .body p{color:#c4d4e8;font-size:16px;line-height:1.7;margin:0 0 14px;}
+.soporte .body p:last-child{margin-bottom:0;}
+.soporte .fig{flex:.9;min-width:0;}
+.soporte .fig img{width:100%;border-radius:18px;box-shadow:0 30px 60px rgba(0,0,0,.4);}
+
+.medida .split{align-items:center;}
+.medida .fig{flex:1;}
+.medida .fig img{width:100%;border-radius:18px;box-shadow:0 30px 60px rgba(12,34,64,.16);}
+.medida .body{flex:1.1;}
+.medida .body h2{color:var(--navy-500);font-weight:800;font-size:40px;line-height:1.12;letter-spacing:-1px;margin:14px 0 18px;}
+.medida .body p{color:var(--ink-soft);font-size:16px;line-height:1.7;margin:0 0 14px;}
+.medida .body p:last-child{margin-bottom:0;}
+
+@media(max-width:920px){
+  .hero-corp{padding:120px 20px 64px;}
+  .hero-corp h1{font-size:28px;}
+  .mod-card{grid-template-columns:1fr;}
+  .mod-card .mc-left{padding:30px 26px 26px;}
+  .mod-card .mc-panel{padding:30px 26px;}
+  .gintro{grid-template-columns:1fr;gap:16px;}
+  .gintro .lead{font-size:18px;}
+  .impl-grid{grid-template-columns:1fr;}
+  .soporte .wrap,.medida .split{flex-direction:column;}
+  .soporte .body,.soporte .fig,.medida .body,.medida .fig{width:100%;}
+  .soporte .body h2,.medida .body h2{font-size:26px;}
+}
+@media(max-width:560px){
+  .mod-card h3{font-size:23px;}
+  .gcallout{flex-direction:column;align-items:flex-start;gap:14px;}
+  .mod-nav{flex-direction:column-reverse;align-items:stretch;gap:16px;}
+  .mod-arrows{justify-content:center;}
+  .mod-dots{justify-content:center;}
+}
+
+/* Título hero: segunda línea (TELECOMUNICACIONES) más chica */
+.hero h1 .h1-sub{
+  display:block;
+  font-size:.56em;        /* más chico que las líneas grandes */
+  line-height:1.05;
+  letter-spacing:-.5px;
+  margin-top:4px;
+}
