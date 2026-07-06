@@ -519,6 +519,9 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .footer .bottom .legal a{color:#6f86a6;font-size:13px;transition:color .2s;}
 .footer .bottom .legal a:hover{color:var(--blue-light);}
 
+.h {color:white;}
+
+
 /* floating whatsapp */
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:900;width:60px;height:60px;border-radius:50%;
   background:var(--wa);display:flex;align-items:center;justify-content:center;
@@ -577,7 +580,7 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   .sol-center img{width:190px;}
   .sol-title{font-size:32px;}
   .sol-head h2{font-size:32px;}
-  
+
  /* Mapa de soluciones: ícono a la izq, título y texto apilados a la der */
   .sol-item{position:static;width:auto;transform:none;text-align:left;
     display:grid;grid-template-columns:auto 1fr;column-gap:14px;row-gap:4px;align-items:start;
