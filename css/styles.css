@@ -693,12 +693,13 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 /* =========================================================
    CORPORATIVOS · Soluciones globales · intro con estilo
    ========================================================= */
-.gintro{display:grid;grid-template-columns:1fr 1fr;gap:26px 56px;align-items:start;margin-bottom:20px;}
-.gintro .lead{font-family:'Sansation',sans-serif;font-weight:700;color:var(--navy-500);
-  font-size:24px;line-height:1.3;letter-spacing:-.4px;margin:0;}
-.gintro .lead .accent{color:var(--blue);}
-.gintro .cols{display:flex;flex-direction:column;gap:14px;}
-.gintro .cols p{color:var(--ink-soft);font-size:16px;line-height:1.7;margin:0;}
+.gintro{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;margin-bottom:8px;}
+.gintro .gcol{display:flex;flex-direction:column;gap:16px;padding:4px 0;}
+.gintro .gcol:first-child{padding-right:48px;}
+.gintro .gcol:last-child{padding-left:48px;border-left:1px solid var(--line);}
+.gintro .gcol p{color:var(--ink-soft);font-size:16.5px;line-height:1.75;margin:0;}
+.gintro .gcol p.lead{color:var(--navy-500);font-weight:600;}
+.gintro .gcol p .accent{color:var(--blue);font-weight:700;}
 .gcallout{display:flex;align-items:center;gap:20px;background:var(--navy-700);border-radius:16px;
   padding:26px 32px;margin-top:8px;}
 .gcallout .gc-ic{flex:none;width:52px;height:52px;border-radius:13px;background:rgba(47,127,224,.18);
@@ -749,8 +750,9 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   .mod-card{grid-template-columns:1fr;}
   .mod-card .mc-left{padding:30px 26px 26px;}
   .mod-card .mc-panel{padding:30px 26px;}
-  .gintro{grid-template-columns:1fr;gap:16px;}
-  .gintro .lead{font-size:18px;}
+  .gintro{grid-template-columns:1fr;gap:0;}
+.gintro .gcol:first-child{padding-right:0;}
+.gintro .gcol:last-child{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:16px;margin-top:4px;}
   .impl-grid{grid-template-columns:1fr;}
   .soporte .wrap,.medida .split{flex-direction:column;}
   .soporte .body,.soporte .fig,.medida .body,.medida .fig{width:100%;}
