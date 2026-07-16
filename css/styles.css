@@ -622,7 +622,7 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   /* Mapa de soluciones: pasa de radial a lista apilada */
   .sol-stage{min-height:auto;display:block;}
   .sol-center{margin-bottom:26px;}
-  .sol-center img{width:190px;}
+  .sol-center img{width:190px;margin-top: 10px;}
   .sol-title{font-size:32px;}
   .sol-item{position:static;width:auto;transform:none;text-align:left;
     display:grid;grid-template-columns:auto 1fr;column-gap:14px;row-gap:4px;align-items:start;
@@ -638,6 +638,15 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   .ben-grid{grid-template-columns:1fr 1fr;}
   .footer .bottom{flex-direction:column;text-align:center;}
 }
+
+/* Título hero: segunda línea (TELECOMUNICACIONES) más chica */
+.hero h1 .h1-sub{
+  display:block;
+  font-size:.46em;        /* más chico que las líneas grandes */
+  line-height:1.05;
+  letter-spacing:-.5px;
+  margin-top:4px;
+}
 @media(max-width:560px){
   .cards-3{grid-template-columns:1fr;}
   .ind-grid{grid-template-columns:1fr;}
@@ -646,10 +655,10 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   .form .grid2{grid-template-columns:1fr;}
   /* Títulos adaptados para celular (más contenidos) */
   /* Título: cada línea con su propio tamaño para calibrar la alineación */
-  .hero h1{width:auto;text-align:left;line-height:1;}
-  .hero h1 .w1{display:block;font-size:14vw;line-height:1;}      /* SOLUCIONES */
-  .hero h1 .w2{display:block;font-size:17.5vw;line-height:1;}    /* GLOBALES */
-  .hero h1 .h1-sub{display:block;font-size:7vw;line-height:1.05;margin-top:4px;}  /* EN TELECOMUNICACIONES */
+  .hero h1{width:auto;text-align:left;line-height:1;padding-right:16px;}
+  .hero h1 .w1{display:block;font-size:12vw;line-height:1;}      /* SOLUCIONES */
+  .hero h1 .w2{display:block;font-size:15vw;line-height:1;}      /* GLOBALES */
+  .hero h1 .h1-sub{display:block;font-size:5.5vw;line-height:1.1;margin-top:6px;}  /* EN TELECOMUNICACIONES */
   /* Quiebre unificado del título en todos los celulares:
      SOLUCIONES / GLOBALES / EN TELECOMUNICACIONES */
   .hero h1 .w1,.hero h1 .w2{display:block;}
@@ -960,11 +969,4 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   .crecer h2{font-size:26px;}
 }
 
-/* Título hero: segunda línea (TELECOMUNICACIONES) más chica */
-.hero h1 .h1-sub{
-  display:block;
-  font-size:.56em;        /* más chico que las líneas grandes */
-  line-height:1.05;
-  letter-spacing:-.5px;
-  margin-top:4px;
-}
+
