@@ -178,6 +178,25 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .hero-stats .stat b{font-family:'Sansation',sans-serif;font-weight:700;color:var(--blue-light);font-size:15px;}
 .hero-stats .stat span{color:#a9bdd6;font-size:14px;}
 
+
+
+/* AITUE ULTRA+ para tu empresa (intro · segunda sección) */
+.empresa-lead{background:var(--paper);}
+.el-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 56px;align-items:start;}
+.el-head{max-width:460px;}
+.el-head h2{color:var(--navy-500);font-family:'Sansation',sans-serif;font-weight:800;font-size:40px;
+  line-height:1.1;letter-spacing:-1px;margin:14px 0 0;}
+.el-body{padding-left:56px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:16px;}
+.el-body p{color:var(--ink-soft);font-size:17px;line-height:1.75;margin:0;}
+.el-body p:first-child{font-family:'Sansation',sans-serif;font-weight:700;color:var(--navy-500);
+  font-size:20px;line-height:1.4;letter-spacing:-.3px;}
+
+@media(max-width:920px){
+  .el-grid{grid-template-columns:1fr;gap:20px;}
+  .el-head h2{font-size:28px;}
+  .el-body{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:20px;}
+  .el-body p:first-child{font-size:18px;}
+}
 /* =========================================================
    SECCIONES GENERALES
    ========================================================= */
@@ -215,32 +234,42 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   box-shadow:0 1px 4px rgba(0,0,0,.35);outline:1px solid rgba(255,255,255,.12);}
 .flag:hover{transform:translateY(-2px);transition:transform .2s;}
 .mk-badge{outline:none;box-shadow:0 1px 4px rgba(0,0,0,.25);}
-/* =========================================================
-   QUIÉNES SOMOS
-   ========================================================= */
-.quienes{background:var(--paper);}
-.quienes .fig{flex:1;position:relative;}
-.quienes .fig .frame{position:absolute;top:-18px;left:-18px;width:120px;height:120px;
-  border:2px solid rgba(47,127,224,.25);border-radius:18px;z-index:0;}
-.quienes .fig img{position:relative;z-index:1;width:100%;border-radius:18px;
-  box-shadow:0 30px 60px rgba(12,34,64,.18);}
-.quienes .fig .tag{position:absolute;z-index:2;bottom:-22px;right:-10px;background:var(--navy-600);
-  color:#fff;padding:18px 22px;border-radius:14px;box-shadow:0 18px 40px rgba(8,26,48,.3);}
-.quienes .fig .tag b{font-family:'Sansation',sans-serif;font-weight:800;font-size:15px;letter-spacing:.5px;}
-.quienes .fig .tag small{display:block;color:#9db4d2;font-size:13px;margin-top:3px;}
-.quienes .body{flex:1.05;}
-.quienes .body h2{color:var(--navy-500);font-weight:800;font-size:40px;line-height:1.12;
-  letter-spacing:-1px;margin:14px 0 20px;}
-.quienes .body p{color:var(--ink-soft);font-size:16px;line-height:1.65;margin:0 0 14px;}
-.hl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px;}
-.hl{border-left:3px solid var(--blue);padding:4px 0 4px 16px;}
-.hl b{display:block;font-family:'Sansation',sans-serif;font-weight:700;color:var(--navy-500);
-  font-size:16px;margin-bottom:4px;}
-.hl span{color:#6a7a92;font-size:14px;line-height:1.5;}
 
+/* =========================================================
+   HERO · AITUE ULTRA+
+   ========================================================= */
+/* =========================================================
+   AITUE ULTRA+ · Sección de info (fondo claro)
+   ========================================================= */
+.ultra-info{background:var(--paper);}
+.ui-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:0 56px;align-items:start;}
+
+.ui-head{max-width:420px;}
+.ui-head h2{font-family:'Sansation',sans-serif;font-weight:800;color:var(--navy-500);
+  font-size:46px;line-height:1.02;letter-spacing:-1.2px;margin:14px 0 18px;}
+.ui-head h2 .plus{color:var(--blue);}
+.ui-claim{display:inline-block;font-family:'Sansation',sans-serif;font-weight:700;
+  color:var(--blue);font-size:14px;letter-spacing:.6px;background:var(--blue-soft);
+  border:1px solid #d4e4fb;padding:10px 16px;border-radius:8px;margin:0;}
+
+.ui-body{padding-left:56px;border-left:1px solid var(--line);
+  display:flex;flex-direction:column;gap:16px;}
+.ui-body .ui-lead{font-family:'Sansation',sans-serif;font-weight:700;color:var(--navy-500);
+  font-size:22px;line-height:1.4;letter-spacing:-.3px;margin:0;}
+.ui-body p{color:var(--ink-soft);font-size:17px;line-height:1.75;margin:0;}
+
+@media(max-width:920px){
+  .ui-grid{grid-template-columns:1fr;gap:24px;}
+  .ui-head h2{font-size:34px;}
+  .ui-body{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:22px;}
+  .ui-body .ui-lead{font-size:19px;}
+}
 /* =========================================================
    ULTRA+
    ========================================================= */
+
+
+/* ===== ULTRA / Protección 360° — contenedor + imagen flotando ===== */
 .ultra{position:relative;background:var(--navy-700);overflow:hidden;}
 .ultra .bg{position:absolute;inset:0;background:url('../assets/img/960x691-2.webp') center/cover;opacity:.6;}
 .ultra .tint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,26,48,.7),rgba(8,26,48,.92));}
@@ -259,6 +288,8 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .ultra .body{flex:1.1;}
 .ultra .body h2{color:#fff;font-weight:800;font-size:44px;line-height:1.08;letter-spacing:-1px;margin:14px 0 16px;}
 .ultra .body .lead{color:#bcd0e8;font-size:16.5px;line-height:1.6;margin:0 0 28px;max-width:560px;}
+
+/* ===== Módulos (características) ===== */
 .ultra-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:32px;}
 .ufeat{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.045);
   border:1px solid rgba(140,175,220,.15);border-radius:12px;padding:16px;
@@ -270,19 +301,33 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .ufeat b{display:block;font-family:'Sansation',sans-serif;font-weight:700;color:#fff;font-size:15px;
   line-height:1.25;margin-bottom:5px;}
 .ufeat span{color:#9fb6d4;font-size:13px;line-height:1.5;}
-.ultra .quote{color:#dce8f7;font-size:15px;font-style:italic;border-left:3px solid var(--blue-light);
-  padding-left:16px;margin:0 0 28px;max-width:540px;}
-.ultra .note{color:#7c93b3;font-size:12.5px;margin:18px 0 0;max-width:520px;}
 .ultra-actions{display:flex;gap:14px;flex-wrap:wrap;}
 
+/* ===== Etiquetas (aplicaciones) + rótulos ===== */
+.ultra .dblock{margin:0 0 22px;}
+.ultra .dlabel{display:block;font-family:'Sansation',sans-serif;font-weight:800;color:var(--blue-light);
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.ultra .dtags{display:flex;gap:8px;flex-wrap:wrap;}
+.ultra .dtags span{color:#bcd0e8;font-size:13px;font-weight:600;
+  border:1px solid rgba(140,175,220,.3);padding:7px 13px;border-radius:20px}
 /* =========================================================
    AITUE ULTRA+ · MAPA DE SOLUCIONES (radial estático)
    ========================================================= */
 .solmap{position:relative;background:var(--navy-800);overflow:hidden;}
 .solmap .bg{position:absolute;inset:0;
   background:url('../assets/img/960x691-2.webp') center/cover;opacity:.5;}
-.solmap .tint{position:absolute;inset:0;
-  background:radial-gradient(80% 80% at 50% 46%,rgba(20,52,98,.55),rgba(6,18,42,.96));}
+.solmap .tint {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(rgba(6, 18, 42, 0.72), rgba(6, 18, 42, 0.88)),
+    url("../assets/img/galaxia.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .solmap .wrap{position:relative;z-index:2;}
 .sol-head{text-align:center;max-width:760px;margin:0 auto 24px;}
 .sol-head h2{color:#fff;font-weight:800;font-size:40px;line-height:1.1;letter-spacing:-1px;margin:14px 0 14px;}
@@ -291,7 +336,7 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .sol-stage{position:relative;min-height:620px;display:flex;flex-direction:column;
   align-items:center;justify-content:center;}
 .sol-center{display:flex;flex-direction:column;align-items:center;text-align:center;z-index:3;width:100%;max-width:520px;margin:0 auto;}
-.sol-center img{display:block;margin:70px auto 0;width:250px;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6));animation:float 7s ease-in-out infinite;}
+.sol-center img{display:block;margin:200px auto 0;width:250px;filter:drop-shadow(0 30px 60px rgba(0,0,0,.6));animation:float 7s ease-in-out infinite;}
 .sol-title{font-family:'Sansation',sans-serif;font-weight:800;color:#fff;font-size:44px;letter-spacing:1px;margin-top:16px;}
 .sol-title .plus{color:var(--blue-light);}
 .sol-sub{color:#cfe0f5;font-size:15px;font-weight:600;margin-top:6px;letter-spacing:.5px;}
@@ -299,7 +344,7 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
   border:1px solid rgba(95,160,236,.4);color:#9cc5f5;font-weight:700;font-size:12px;
   letter-spacing:1.5px;padding:9px 18px;border-radius:8px;}
 
-.sol-item{position:absolute;width:220px;z-index:4;}
+.sol-item{position:absolute;width:280px;z-index:4;}
 .sol-item .sic{width:88px;height:88px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   background:radial-gradient(circle at 50% 32%,rgba(38,84,150,.6),rgba(8,22,46,.92) 72%);
@@ -310,7 +355,12 @@ h1,h2,h3{font-family:'Sansation',sans-serif;margin:0;}
 .sol-item .sic svg{width:42px;height:42px;}
 .sol-item:hover .sic{transform:translateY(-4px);box-shadow:0 0 0 5px rgba(22,54,104,.35),0 0 58px rgba(47,127,224,.7),inset 0 4px 22px rgba(130,185,255,.35);}
 .sol-item h4{font-family:'Sansation',sans-serif;font-weight:800;color:#fff;font-size:18px;letter-spacing:.5px;margin:0 0 6px;}
-.sol-item p{color:#aec3e0;font-size:13.5px;line-height:1.5;margin:0;}
+.sol-item p{color:#aec3e0;font-size:13.5px;line-height:1.5;margin:0;text-wrap:pretty;}
+
+/* alineación por posición */
+.sol-op,.sol-ad{text-align:left;}
+.sol-vi,.sol-tk{text-align:right;}
+.sol-wf{left:50%;transform:translateX(-50%);top:2%;text-align:center;width:420px;}
 
 /* posiciones alrededor del equipo (desktop) — más cerca del centro */
 .sol-op{left:11%;top:26%;}
